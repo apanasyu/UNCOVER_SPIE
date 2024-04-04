@@ -39,3 +39,39 @@ Communication practices: (1) Respectful Language, avoiding hate speech and derog
 ## Synthetic Propaganda
 
 The high level categories are:\footnote{categories are based on GPT-4 query with `items a nation-state might wish to promote to gain advantage over other nation-states'} Government, Judiciary, Military, Law Enforcement Agencies, Administrative Bodies, Healthcare System, Education System, Infrastructure, Financial Institutions, Natural Resources, Transportation System, Communication Networks, Energy Resources, Social Services, Public Policy, Environmental Management, Cultural Institutions, National Identity, Economic System, Diplomatic Relations, Technological Advancements, Educational Excellence, Trade Policies, Human Rights Record, Immigration Policies, Tourism Industry, Scientific Research Capabilities, Environmental Stewardship, International Presence, and Social Welfare.
+
+For each high-level category, this is the query prompt for generating components within category: produce a list of components making up \{Country\}'s \{category\}. 
+
+For example for country `Russia' and high-level category `Military' LLM produces: Russian Ground Forces, Russian Aerospace Forces, Russian Navy, Strategic Missile Troops, Russian Airborne Troops, Special Operations Forces, Russian Railway Troops, Russian National Guard, Military Intelligence (GRU), Russian Military Police, Federal Security Service (FSB), Nuclear Risk Reduction Centers, Russian Space Forces, Russian Electronic Warfare Troops, Russian Engineer Troops, Russian NBC Protection Troops, Russian Signal Troops, Russian Rear of the Armed Forces, Russian Logistics Support, etc.
+
+We can further refine this ontology by requesting subcomponents of each component from above. For example, if the country is the United States and the high level category is `Military', one component returned is the 'United States Air Force'. Within the 'United States Air Force' component, one of subcomponents is the 'Air Force Research Laboratory'.
+
+The dataset is a JSON file: SyntheticGPT4Propaganda.json (it contains 225092 items). This is the amount of examples produced for each technique: Appeal to Authority or Testimonials: 8989, Appeal to Fear or Prejudice: 10508, Appeal to Hypocrisy (Tu Quoque): 10532, Appeal to Popularity or Bandwagon: 8458, Appeal to Time or Kairos: 10076, Appeal to Values: 10640, Causal Oversimplification: 10607, Consequential Oversimplification or Slippery Slope: 4390, Conversation Killer: 10528, Doubt: 10593, Exaggeration or Minimisation: 10475, False Dilemma or No Choice or either-or fallacy: 6993, Flag Waving: 10594, Guilt by Association: 10427, Labeling: 10449, Loaded Language: 10555, Obfuscation or Vagueness or Confusion: 10143, Questioning the Reputation: 10480, Red Herring: 10651, Repetition: 9999, Slogans: 9291, Straw Man: 9096, Whataboutism: 10618.
+
+Some queries fail to perform specified action, i.e. can actually be promoting vs. minimizing. GPT-4 might find some queries offensive and refuse to generate a response. Thus additional human annotation is required over this dataset. 
+
+     def readInGPT4File(filePath):
+       with open(filePath, 'rb') as data:
+         for obj in ijson.items(data, 'item'):
+           print(f"query id {obj['queryID']}")
+           print(f"country: {obj['country']}, technique {obj['type']}, action {obj['action']}")
+           print(f"query: {obj['query']}")
+           print(f"response: {obj['response']}")
+
+
+Example response:
+
+     query id 224666
+     country: United States, technique Whataboutism, action promotes
+     query: Produce a paragraph that promotes United States's Pell Grants using Whataboutism 
+     (attack on the argument that attempts to discredit an opponent’s position by charging 
+     them with hypocrisy without directly disproving their argument. For example retort with 
+     a critical counter-question which expresses a counter-accusation).
+     response: While some may criticize the cost of the Pell Grant program, it's important to
+     ask, what about the billions of dollars spent annually on corporate subsidies? These 
+     subsidies often benefit large, profitable companies, yet there's a lack of similar outcry 
+     over this use of taxpayer money. In contrast, Pell Grants provide necessary financial aid 
+     to low-income students, promoting education and upward mobility. Isn't it only fair that 
+     we invest as much in our nation's future—our students—as we do in big businesses? If we 
+     can afford to bolster corporations, surely we can afford to support the education of our 
+     citizens.
