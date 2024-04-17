@@ -1,0 +1,325 @@
+Question ID,Grouping,Question
+Q0,respect for opposing viewpoints,Does the text acknowledge opposing viewpoints?
+Q1,respect for opposing viewpoints,Are opposing viewpoints presented in a respectful manner?
+Q2,respect for opposing viewpoints,Does the text contain any derogatory language or insults directed towards opposing viewpoints?
+Q3,respect for opposing viewpoints,Does the author provide thoughtful responses or counterarguments to opposing viewpoints?
+Q4,respect for opposing viewpoints,Is there evidence of the author considering the merits of opposing viewpoints?
+Q5,respect for opposing viewpoints,Does the author dismiss opposing viewpoints without thoughtful consideration?
+Q6,respect for opposing viewpoints,Does the text contain any form of mockery towards opposing viewpoints?
+Q7,respect for opposing viewpoints,Does the text contain any form of bias that disrespects opposing viewpoints?
+Q8,respect for opposing viewpoints,Does the author provide balanced arguments for and against opposing viewpoints?
+Q9,respect for opposing viewpoints,Does the text contain any form of personal attacks against those holding opposing viewpoints?
+Q10,relevance,Is the main thesis of the text clearly stated?
+Q11,relevance,Do all the points mentioned in the text support the main thesis?
+Q12,relevance,Are there any unrelated or off-topic points in the text?
+Q13,relevance,Is the evidence provided in the text relevant to the thesis?
+Q14,relevance,Are the examples and explanations given in the text directly connected to the thesis?
+Q15,relevance,Are there any contradictions or inconsistencies in the text that might detract from the overall relevance?
+Q16,objectivity,Is the text free from personal opinions or emotions?
+Q17,objectivity,Does the text rely on facts and evidence?
+Q18,objectivity,Are both sides of an argument presented fairly?
+Q19,objectivity,Are any biases or assumptions evident in the text?
+Q20,objectivity,Does the author avoid using loaded language or emotionally-charged words?
+Q21,objectivity,Are sources cited to support the information provided?
+Q22,objectivity,Is the text focused on the topic without digressing into unrelated personal experiences or anecdotes?
+Q23,name_calling-labeling,Does the text use derogatory labels or names?
+Q24,name_calling-labeling,Are there instances in the text where individuals or groups are demeaned or belittled?
+Q25,name_calling-labeling,Does the text use labels or names to influence the reader's opinion negatively?
+Q26,name_calling-labeling,Are there instances of name-calling or labeling that seem to aim at swaying sentiments?
+Q27,name_calling-labeling,Does the text use name-calling or labeling as a strategy to discredit or devalue someone or something?
+Q28,name_calling-labeling,Are there instances in the text where labels are used to create a negative perception?
+Q29,name_calling-labeling,Are any labels or names used in a way that could be considered disrespectful or offensive?
+Q30,name_calling-labeling,Does the text use name-calling or labeling to form negative associations?
+Q31,name_calling-labeling,Are there instances in the text where name-calling or labeling is used to evoke negative emotions?
+Q32,name_calling-labeling,Does the text use name-calling or labeling to manipulate the reader's opinion?
+Q33,obfuscation-vagueness-confusion,Does the text provide clear and specific details?
+Q34,obfuscation-vagueness-confusion,Are there phrases or sentences in the text that can be interpreted in more than one way?
+Q35,obfuscation-vagueness-confusion,Can you identify parts of the text where ambiguity or vagueness have been intentionally used?
+Q36,obfuscation-vagueness-confusion,Are there any instances in the text where the meaning is not straightforward?
+Q37,obfuscation-vagueness-confusion,Does the text contain any contradictory statements or ideas?
+Q38,obfuscation-vagueness-confusion,Are there sections in the text that are difficult to understand due to lack of clarity or precision?
+Q39,obfuscation-vagueness-confusion,Is the text consistently clear and concise throughout?
+Q40,obfuscation-vagueness-confusion,Does the text contain any abstract or vague terms that could be interpreted differently by different readers?
+Q41,obfuscation-vagueness-confusion,Can you find any instances of unnecessary complexity in the text?
+Q42,flag_waving,Is the text using patriotic language or symbols?
+Q43,flag_waving,Does the text appeal to group loyalty or allegiance?
+Q44,flag_waving,Are there references to national or group pride in the text?
+Q45,flag_waving,Is the conclusion of the text supported by patriotism or group identity?
+Q46,flag_waving,Does the text use group affiliation to justify its argument?
+Q47,clear and concise,Does the text convey its message clearly?
+Q48,clear and concise,Are there any parts of the text that are ambiguous or confusing?
+Q49,clear and concise,Does the text avoid unnecessary jargon or complex language?
+Q50,clear and concise,Is the text free from redundant or repetitive phrases?
+Q51,clear and concise,Can the main idea of the text be understood quickly and easily?
+Q52,clear and concise,Are the sentences in the text short and to the point?
+Q53,clear and concise,Does the text stick to the main topic without going off on tangents?
+Q54,questioning_the_reputation,Does the text directly criticize or undermine the target's reputation?
+Q55,questioning_the_reputation,Are there any insinuations or indirect references that question the target's credibility?
+Q56,questioning_the_reputation,Does the text use any derogatory language or negative adjectives while referring to the target?
+Q57,questioning_the_reputation,Is the target's past work or actions being used to discredit their current argument?
+Q58,questioning_the_reputation,Are there any personal attacks on the target that divert from the main argument?
+Q59,questioning_the_reputation,Does the text suggest that the target is not trustworthy or reliable?
+Q60,questioning_the_reputation,Is the text attempting to create doubt about the target's integrity or competence?
+Q61,logical reasoning,"Is the text structured with a clear beginning, middle, and end?"
+Q62,logical reasoning,Are the ideas presented in a logical order?
+Q63,logical reasoning,Does the text use valid arguments and evidence to support its claims?
+Q64,logical reasoning,Are there any logical fallacies present in the text?
+Q65,logical reasoning,Does the text avoid contradictions or inconsistencies?
+Q66,logical reasoning,Can each statement in the text be traced back to a valid premise or conclusion?
+Q67,thesis,Is the main idea of the text clearly stated?
+Q68,thesis,Are the supporting arguments logically connected to the main idea?
+Q69,thesis,Does the text provide enough evidence to support its claims?
+Q70,thesis,Is the language used in the text straightforward and easy to understand?
+Q71,thesis,Are there any parts of the text that are confusing or hard to follow?
+Q72,thesis,Does the text stay focused on its main idea throughout?
+Q73,thesis,Are the conclusions drawn in the text logically derived from its premises?
+Q74,appeal_to_authority,Does the text reference any authorities or experts?
+Q75,appeal_to_authority,Are these references used to support the text's conclusion?
+Q76,appeal_to_authority,Is there any evidence provided besides the authority's opinion?
+Q77,appeal_to_authority,Does the text rely heavily on the authority's credibility for its argument?
+Q78,appeal_to_authority,Are the authorities referenced relevant to the topic of the text?
+Q79,source credibility,Is the author of the text an expert in the field?
+Q80,source credibility,Are the sources cited in the text from reputable publications or institutions?
+Q81,source credibility,Do the sources provide verifiable and accurate information?
+Q82,source credibility,Are the sources free from bias or conflicts of interest?
+Q83,source credibility,Do the sources have a history of providing reliable information?
+Q84,source credibility,Are the sources recent and up-to-date?
+Q85,source credibility,Are multiple sources used to support the claims made in the text?
+Q86,persuasive language,Does the text contain words or phrases that evoke emotions?
+Q87,persuasive language,Are there any statements in the text that appeal to the reader's values or beliefs?
+Q88,persuasive language,Is there any use of expressive language or imagery that could influence the reader's feelings?
+Q89,persuasive language,Does the text use language that encourages the reader to take a particular action or adopt a certain viewpoint?
+Q90,persuasive language,Are there any rhetorical questions used in the text to engage the reader's emotions or values?
+Q91,persuasive language,Are there any instances where the text uses exaggeration or hyperbole for emotional effect?
+Q92,persuasive language,Does the text make use of positive or negative connotations to sway the reader's opinion?
+Q93,persuasive language,Is there a use of personal pronouns to create a connection with the reader?
+Q94,constructive dialogue,Does the text contain personal attacks or insults?
+Q95,constructive dialogue,Does the text focus on addressing ideas and opinions rather than the person expressing them?
+Q96,constructive dialogue,Are there instances where the text refrains from derogatory language while discussing differing views?
+Q97,constructive dialogue,Does the text promote a respectful exchange of ideas?
+Q98,constructive dialogue,Are there instances of the text encouraging understanding and empathy rather than hostility?
+Q99,constructive dialogue,Does the text avoid blame and instead focuses on problem-solving?
+Q100,constructive dialogue,Is the language used in the text non-aggressive and respectful?
+Q101,constructive dialogue,Does the text avoid inflammatory or provocative language?
+Q102,constructive dialogue,Can you identify instances in the text where criticism is constructive rather than destructive?
+Q103,causal_oversimplification,Does the text present a complex issue as being caused by a single factor?
+Q104,causal_oversimplification,Are there multiple potential causes for the issue that are not addressed in the text?
+Q105,causal_oversimplification,Does the text ignore or dismiss potential complications or nuances related to the issue?
+Q106,causal_oversimplification,"Is there evidence of reductionism, where complex phenomena are reduced to one or two simple causes?"
+Q107,causal_oversimplification,Does the text make sweeping generalizations about the cause of the issue?
+Q108,honesty,Is the text clear and concise in its message?
+Q109,honesty,Does the text avoid using manipulative or deceptive language?
+Q110,honesty,Is the tone of the text respectful and considerate?
+Q111,honesty,Are any potentially negative statements in the text presented with empathy and understanding?
+Q112,honesty,Are facts and opinions in the text presented truthfully and without distortion?
+Q113,nonviolent communication,Does the text use language that is respectful and considerate?
+Q114,nonviolent communication,Are there any instances of aggressive or harmful language in the text?
+Q115,nonviolent communication,Does the text use inclusive language that promotes understanding and empathy?
+Q116,nonviolent communication,Is there any use of derogatory or demeaning language in the text?
+Q117,nonviolent communication,Does the text promote peaceful dialogue and negotiation?
+Q118,nonviolent communication,Are there instances where the text could be perceived as offensive or attacking?
+Q119,nonviolent communication,Does the text avoid blame or judgement?
+Q120,nonviolent communication,Does the text focus on needs and feelings instead of evaluations or interpretations?
+Q121,nonviolent communication,Is the text free from any form of verbal violence?
+Q122,nonviolent communication,Does the text promote mutual respect and understanding?
+Q123,nonviolent communication,Does the text avoid any form of linguistic discrimination or bias?
+Q124,appeal_to_popularity,Does the text use phrases that indicate majority support or popularity?
+Q125,appeal_to_popularity,Does the text use the popularity of a belief or action as evidence for its validity?
+Q126,appeal_to_popularity,"Are there instances where the text implies that because many people do it, it must be correct or good?"
+Q127,appeal_to_popularity,Does the text assume that popular opinion equates to factual evidence or correctness?
+Q128,appeal_to_popularity,Can you identify parts of the text where appeal to popularity is used to strengthen the argument?
+Q129,conversation_killer,Is the text presenting a one-sided argument?
+Q130,conversation_killer,Does the text use dismissive language or tone?
+Q131,conversation_killer,Are opposing viewpoints acknowledged and addressed?
+Q132,conversation_killer,Does the text rely on logical fallacies or manipulation tactics?
+Q133,conversation_killer,Are questions or alternative perspectives discouraged in the text?
+Q134,conversation_killer,Is the text discouraging further inquiry or exploration of the topic?
+Q135,conversation_killer,Does the text use ad hominem attacks or personal insults?
+Q136,red_herring,Does the text contain information that seems unrelated to the main topic?
+Q137,red_herring,Are there sections in the text that distract from the main theme or argument?
+Q138,red_herring,Can you identify parts of the text where an irrelevant issue is introduced to divert attention from the main subject?
+Q139,red_herring,Does the text introduce new topics that do not contribute to the main argument or theme?
+Q140,red_herring,Are there any parts of the text that seem to mislead or misdirect the reader away from the main point?
+Q141,red_herring,Is there a discrepancy between the title or introduction and the content of the text?
+Q142,empathetic tone,Does the text acknowledge other people's feelings or viewpoints?
+Q143,empathetic tone,Are there phrases or sentences that show understanding of other people's emotions?
+Q144,empathetic tone,Does the text use language that is commonly associated with empathy?
+Q145,empathetic tone,Is the tone of the text understanding and supportive rather than judgmental or dismissive?
+Q146,empathetic tone,"Does the text use first-person plural pronouns (we, us, our) to create a sense of shared experience or understanding?"
+Q147,empathetic tone,Are there instances where the text validates other people's experiences or feelings?
+Q148,empathetic tone,Does the text avoid blaming or criticizing others?
+Q149,empathetic tone,Is there a balance in the text between expressing one's own viewpoint and acknowledging others'?
+Q150,empathetic tone,Does the text show respect for different perspectives?
+Q151,empathetic tone,Does the text use empathetic phrases or expressions?
+Q152,rhetorical devices,Does the text use comparisons between two seemingly unrelated things?
+Q153,rhetorical devices,"Are there instances of metaphor, where one thing is described as being another?"
+Q154,rhetorical devices,"Can you identify any similes, where two things are compared using ""like"" or ""as""?"
+Q155,rhetorical devices,"Are there any analogies used to explain complex concepts by comparing them to simpler, more familiar ones?"
+Q156,rhetorical devices,Does the text rely on figurative language to convey its message?
+Q157,appeal_to_time,Does the text suggest that a certain action should be taken now?
+Q158,appeal_to_time,Is there an implication in the text that the current time is ideal for a specific action?
+Q159,appeal_to_time,Does the text contain phrases or sentences that convey a sense of urgency or immediacy for an action?
+Q160,appeal_to_time,Is there a reference to time in relation to a certain action in the text?
+Q161,appeal_to_time,Does the text make a connection between the timing and the effectiveness or success of an action?
+Q162,open-mindedness,Does the text present multiple perspectives on a topic?
+Q163,open-mindedness,Is there evidence of the author considering perspectives different from their own?
+Q164,open-mindedness,Does the text avoid making absolute statements without considering alternatives?
+Q165,open-mindedness,Does the text encourage the reader to think about different viewpoints?
+Q166,open-mindedness,Are contrasting ideas presented and explored in the text?
+Q167,open-mindedness,Can you identify phrases or sentences that indicate the author's willingness to consider other ideas?
+Q168,active listening,Does the text indicate the receiver is fully engaged with the speaker?
+Q169,active listening,Does the text showcase the receiver's understanding of the speaker's points?
+Q170,active listening,Does the text contain evidence of the receiver asking clarifying questions?
+Q171,active listening,Is there evidence in the text of the receiver summarizing or paraphrasing the speaker's points?
+Q172,active listening,Does the text indicate the receiver is not interrupting or distracting the speaker?
+Q173,active listening,Is there evidence in the text of the receiver giving feedback to the speaker?
+Q174,active listening,Does the text show the receiver providing non-verbal cues of active listening?
+Q175,active listening,Is there any indication in the text of the receiver avoiding premature judgment?
+Q176,active listening,Does the text show the receiver encouraging the speaker to continue speaking?
+Q177,active listening,Does the text indicate the receiver is focused on the speaker and not on formulating their own response?
+Q178,slogans,Is the text short and easily memorable?
+Q179,slogans,Does the text contain a catchy phrase that encapsulates a message?
+Q180,slogans,Is there a strong emotional appeal in the text?
+Q181,slogans,Can the text be used as a rallying cry or motto?
+Q182,slogans,Does the text convey a clear and concise message?
+Q183,slogans,Are there any repetitive elements in the text that make it more memorable?
+Q184,respectful language,Does the text contain any derogatory terms?
+Q185,respectful language,Are there any instances of hate speech in the text?
+Q186,respectful language,Does the text use inappropriate language?
+Q187,respectful language,Are the words used in the text courteous and polite?
+Q188,respectful language,Is the language used in the text respectful towards all individuals or groups mentioned?
+Q189,respectful language,Are there any instances of disrespectful language towards any individual or group?
+Q190,respectful language,Does the text use language that could be considered offensive or disrespectful?
+Q191,respectful language,Are there any phrases or words in the text that could be perceived as rude or impolite?
+Q192,respectful language,Does the text use language that promotes understanding and respect?
+Q193,respectful language,Are there any instances of language that could be considered as a personal attack or insult?
+Q194,respectful language,Does the text use language that fosters inclusivity and respect for diversity?
+Q195,solution-oriented,Does the text propose any solutions or compromises?
+Q196,solution-oriented,Is the focus of the text on resolving issues rather than emphasizing disagreements?
+Q197,solution-oriented,Are there suggestions for positive actions or changes in the text?
+Q198,solution-oriented,Does the text avoid dwelling on points of disagreement or conflict?
+Q199,solution-oriented,Can you identify parts of the text where a solution-oriented approach has been intentionally used?
+Q200,solution-oriented,Does the text promote constructive dialogue or cooperation?
+Q201,solution-oriented,Are there any mentions of compromise or negotiation in the text?
+Q202,solution-oriented,Does the text provide a clear path or plan for addressing the issue at hand?
+Q203,solution-oriented,Is there a positive or forward-thinking tone throughout the text?
+Q204,solution-oriented,Does the text suggest ways to overcome obstacles or challenges?
+Q205,consequential_oversimplification,Is the text presenting a complex issue as having only one or few consequences?
+Q206,consequential_oversimplification,Does the text ignore potential negative consequences of the proposition?
+Q207,consequential_oversimplification,Does the text ignore potential positive consequences of the proposition?
+Q208,consequential_oversimplification,Are there any assumptions made in the text that lead to oversimplified outcomes?
+Q209,consequential_oversimplification,Does the text dismiss or downplay alternative perspectives on the consequences?
+Q210,loaded_language,Does the text contain words or phrases that evoke strong emotions?
+Q211,loaded_language,Are there words or phrases in the text that are intended to manipulate the reader's feelings?
+Q212,loaded_language,Can you identify any instances where emotionally charged language is used to support a claim?
+Q213,loaded_language,Are there parts in the text where the language is used to influence the reader's opinion or decision?
+Q214,loaded_language,Does the text use language that is biased or prejudiced?
+Q215,loaded_language,Does the text use language that is intended to provoke a particular reaction from the reader?
+Q216,loaded_language,Can you find any instances where the language used is not neutral or objective?
+Q217,loaded_language,Does the text use language that is intended to sway the reader's viewpoint?
+Q218,repetition,Does the text frequently restate the same idea or concept?
+Q219,repetition,"Are there instances of repeated words, phrases, or sentences that emphasize a particular point?"
+Q220,repetition,Does the text use synonyms or different sentence structures to repeat the same point?
+Q221,repetition,Is the repetition used to emphasize a particular theme or message in the text?
+Q222,repetition,Can you identify parts of the text where the same idea is expressed in different ways?
+Q223,false_dilemma-no_choice,Is the text presenting only two alternatives?
+Q224,false_dilemma-no_choice,Are there additional options that the text fails to mention?
+Q225,false_dilemma-no_choice,"Does the text use words like ""either"" or ""or"" to create a binary choice?"
+Q226,false_dilemma-no_choice,Is the text oversimplifying a complex issue?
+Q227,false_dilemma-no_choice,Can you think of any other potential solutions or options that the text does not address?
+Q228,context,"Does the text reference any social, cultural, historical, or political factors?"
+Q229,context,Does the text make connections to broader themes or issues?
+Q230,context,Is there evidence of the author's understanding of the context in which they are writing?
+Q231,context,Are there any indications that the author has considered the wider implications of the topic?
+Q232,context,Does the text draw on knowledge outside of its immediate subject matter?
+Q233,context,Can you identify any references to societal or cultural norms in the text?
+Q234,context,Does the text contain historical references or analogies?
+Q235,context,Can you find any political commentary or references within the text?
+Q236,context,Is the context of the text discernible from the information provided within it?
+Q237,context,Does the text make any assumptions about the reader's knowledge of the context?
+Q238,factual accuracy,Does the text contain verifiable facts?
+Q239,factual accuracy,Are the sources of information mentioned in the text credible and reliable?
+Q240,factual accuracy,Are there any statements in the text that contradict known facts or data?
+Q241,factual accuracy,Does the evidence provided in the text support the argument made?
+Q242,factual accuracy,Are there any logical fallacies or misleading information present in the text?
+Q243,factual accuracy,Can the information in the text be cross-verified with other reliable sources?
+Q244,evidence,Is there statistical data mentioned in the text?
+Q245,evidence,Are there factual statements presented?
+Q246,evidence,Are there specific examples provided?
+Q247,evidence,Are expert opinions or quotes included?
+Q248,evidence,Can the sources of information be verified?
+Q249,evidence,Are the supporting arguments relevant to the main claim?
+Q250,evidence,Are the evidence and examples directly related to the topic?
+Q251,clarity,Is the text free of grammatical errors?
+Q252,clarity,Does the text follow proper sentence structure?
+Q253,clarity,Are the ideas in the text presented in a logical order?
+Q254,clarity,Does the text use concise and precise language?
+Q255,clarity,Are technical terms or jargon clearly defined or explained?
+Q256,clarity,Are there any ambiguous or vague phrases in the text?
+Q257,none,Does the text contain any subjective language or opinion-based statements?
+Q258,none,Are there any emotionally charged words or phrases used in the text?
+Q259,none,"Does the text use any persuasive techniques such as repetition, rhetorical questions, or appeals to emotion?"
+Q260,none,Can you identify any instances of bias in the text?
+Q261,none,Are there any unsupported or generalized statements in the text?
+Q262,none,Are all points of view represented fairly in the text?
+Q263,none,Does the text use any manipulative or misleading language?
+Q264,none,Does the text present facts and information without any apparent agenda or bias?
+Q265,none,Is the tone of the text neutral and objective?
+Q266,none,Are there any persuasive elements or tactics used in the text?
+Q267,guilt_by_association,Is there a mention of an entity in the text?
+Q268,guilt_by_association,Is there a mention of a negatively viewed group in the text?
+Q269,guilt_by_association,Is there any part of the text that links the mentioned entity with the negatively viewed group?
+Q270,guilt_by_association,Does the text suggest a negative view of the entity based on its association with the negatively viewed group?
+Q271,guilt_by_association,Can you identify parts of the text where the association is used to discredit the entity?
+Q272,counterarguments,Is there a mention of opposing viewpoints in the text?
+Q273,counterarguments,Does the text provide evidence or reasoning to refute counterarguments?
+Q274,counterarguments,Are potential objections acknowledged and addressed?
+Q275,counterarguments,Does the text demonstrate an understanding of the opposing perspective?
+Q276,counterarguments,Are counterarguments presented in a fair and unbiased manner?
+Q277,doubt,Does the text contain statements that question the credibility of a person or entity?
+Q278,doubt,Is there language used in the text that undermines the character or attributes of someone?
+Q279,doubt,Are there phrases or sentences in the text that express skepticism or disbelief?
+Q280,doubt,Can you identify parts of the text where doubt or suspicion have been intentionally used?
+Q281,doubt,Does the text contain any implied or explicit accusations?
+Q282,doubt,Does the text use rhetorical questions to cast doubt?
+Q283,doubt,Is the overall tone of the text questioning or doubtful?
+Q284,doubt,Are there any adjectives or adverbs used that contribute to a sense of doubt or uncertainty?
+Q285,straw_man,Does the text contain any misrepresentation of someone's position or argument?
+Q286,straw_man,Is there evidence of the text oversimplifying or exaggerating someone's stance?
+Q287,straw_man,Does the text attack a position that the person in question does not actually hold?
+Q288,straw_man,Can you identify instances where the author has distorted the original argument for easier refutation?
+Q289,straw_man,Does the text provide a fair and accurate representation of the opposing argument?
+Q290,straw_man,Is there a clear distinction between the actual position and the misrepresented one in the text?
+Q291,straw_man,Is the misrepresented argument attacked instead of the original one?
+Q292,straw_man,Does the author later address the actual argument or only the misrepresented one?
+Q293,exaggeration-minimisation,Does the text contain phrases or sentences that seem to amplify the importance or size of a subject?
+Q294,exaggeration-minimisation,Are there parts of the text that seem to reduce or downplay the significance or size of a subject?
+Q295,exaggeration-minimisation,Can you identify any instances where the text may be using hyperbole or understatement?
+Q296,exaggeration-minimisation,"Does the text maintain a consistent tone in describing subjects, or are there noticeable shifts?"
+Q297,exaggeration-minimisation,Are the descriptions in the text proportional to the subjects they describe?
+Q298,appeal_to_values,Does the text refer to widely recognized values?
+Q299,appeal_to_values,Is the text trying to support its message by invoking shared values?
+Q300,appeal_to_values,Can you identify parts of the text where values are being used to support the message?
+Q301,appeal_to_values,Is the text appealing to emotions related to certain values?
+Q302,appeal_to_values,Does the text rely on shared values to make its point more persuasive?
+Q303,whataboutism,Does the text attempt to redirect the focus from the original topic?
+Q304,whataboutism,Is the text accusing the opponent of hypocrisy?
+Q305,whataboutism,Does the text address the opponent's argument or introduce an unrelated issue?
+Q306,whataboutism,Is the text trying to discredit the opponent rather than addressing the issue at hand?
+Q307,whataboutism,"Can you identify any logical fallacies in the text, such as ""tu quoque"" or ""two wrongs make a right""?"
+Q308,appeal_to_hypocrisy,Does the text accuse the target of not practicing what they preach?
+Q309,appeal_to_hypocrisy,Does the text aim to discredit the target by pointing out their inconsistencies?
+Q310,appeal_to_hypocrisy,Is there an attempt to tarnish the target's reputation by highlighting their hypocrisy?
+Q311,appeal_to_hypocrisy,Does the text use the target's past actions or statements to contrast with their current position?
+Q312,appeal_to_hypocrisy,Does the text imply that the target is not trustworthy due to their hypocritical behavior?
+Q313,appeal_to_hypocrisy,Can you identify phrases or sentences where the target is accused of being insincere or deceitful?
+Q314,appeal_to_hypocrisy,Does the text suggest that the target's actions contradict their stated beliefs or values?
+Q315,appeal_to_hypocrisy,Does the text use the target's hypocrisy as a means to undermine their credibility?
+Q316,appeal_to_fear-prejudice,Does the text contain elements that provoke fear or anxiety?
+Q317,appeal_to_fear-prejudice,Are there instances of biased or prejudiced language used in the text?
+Q318,appeal_to_fear-prejudice,Does the text use fear-based tactics to persuade the reader?
+Q319,appeal_to_fear-prejudice,Is there evidence of the text promoting or rejecting an idea based on fear or prejudice?
+Q320,appeal_to_fear-prejudice,Does the text exploit the reader's insecurities or prejudices to make a point?
+Q321,appeal_to_fear-prejudice,Are there any stereotypes being exploited in the text?
+Q322,appeal_to_fear-prejudice,"Does the text attempt to manipulate the reader's emotions, particularly fear or prejudice, to support its arguments?"
+Q323,appeal_to_fear-prejudice,"Can you identify any instances where the text attempts to stoke fear or prejudice, rather than providing logical or factual evidence?"
