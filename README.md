@@ -129,7 +129,7 @@ Similarly to look at Russian version of Q49100 vs. English that has been transla
 The files that ends with GPTResponse.txt show aggregated extraction of emotional responses. For example, for Q49100_2_EN_FileText:
 ![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/97689084-e97e-4159-9a64-c6dad9e350ad)
 Q49100_2_EN_GPTResponse contains possible biased emotional text:
-![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/f0102d70-1b5b-40f9-a25e-4b39fc7de130)
+![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/d3ead699-972d-4706-8656-afda5c29cccf)
 
 The overlap has been highlighed for the first quoted piece of text. The chunk Q49100_4 is used (there was no emotional text identified for chunks Q49100_1, Q49100_2, Q49100_3). We see that the next chunk with any emotion is Q49100_13.
 
