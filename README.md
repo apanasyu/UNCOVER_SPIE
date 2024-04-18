@@ -73,7 +73,9 @@ We used the 12 questions to predict class propaganda (if one or more HLQs answer
 
 ## Wikipedia Dataset
 
-The 
+The 22,046 articles are translated. Each Wikipedia article by default contains sections. Within each section, the content is divided into chunks; where each chunk is not to exceed 3000 characters.
+![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/d40a8070-bcd7-4d74-a802-fd2e6cfc4c98)
+
 
 ## Synthetic Propaganda Dataset
 
