@@ -62,13 +62,24 @@ Next we perform feature selection using:
 The ANOVA and RandomForest Question importances are stored in: anova_feature_importance.csv and random_forest_feature_importances.csv. For example, using ANOVA the top questions for Appeal to Authority are:
 ![Picture4](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/280c4297-6d7d-480c-822c-1059b778fe7d)
 
+Based on ANOVA and RandomForest ranking we utilize 12 questions: Q20 pertains to objectivity, Q88 and Q92 address persuasive language to evoke emotional responses, Q210 through Q217 explore aspects of loaded language, Q258 associated with none, and Q295 examines the use of exaggeration or minimization. In this way, 9 out of the 12 questions are related to loaded or emotional language. This was expected given that `loaded language' is by far the most frequent category in SemEval. 
+
 Of particular interest was analyzing how each question performs in predicting class 0 (propaganda) or class 1 (none). Weighed and Macro values provided. We used this to determine whether the answer to question of True or False is indicative of propaganda for example when Q20 is True it is indicative of propaganda conversely for Q258 should use the False (see IndividualHLQPerformance_Confidence85_NoneLabel1.csv).
 ![Screenshot from 2024-04-18 09-43-45](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/db6c0e68-65a1-485f-9d60-bae5d0074267)
 
-Based on ANOVA and RandomForest ranking we utilize 12 questions: Q20 pertains to objectivity, Q88 and Q92 address persuasive language to evoke emotional responses, Q210 through Q217 explore aspects of loaded language, Q258 associated with none, and Q295 examines the use of exaggeration or minimization. In this way, 9 out of the 12 questions are related to loaded or emotional language. This was expected given that `loaded language' is by far the most frequent category in SemEval. 
+We negated the question if necessary such that the True answer implies that text has propaganda. Here are the revised questions:
+
+These are the 12 questions from employed in English: 
+   {'Q0': 'Does the author employ loaded language or emotionally-charged words?', 'Q1': 'Can you identify any instances where emotionally charged language is used to support a claim?', 'Q2': 'Are there any emotionally charged words or phrases used in the text?', 'Q3': "Does the text use language that is intended to sway the reader's viewpoint?", 'Q4': "Are there parts in the text where the language is used to influence the reader's opinion or decision?", 'Q5': "Does the text make use of positive or negative connotations to sway the reader's opinion?", 'Q6': 'Does the text contain words or phrases that evoke strong emotions?', 'Q7': 'Can you find any instances where the language used is not neutral or objective?', 'Q8': "Is there any use of expressive language or imagery that could influence the reader's feelings?", 'Q9': 'Does the text use language that is intended to provoke a particular reaction from the reader?', 'Q10': 'Can you identify any instances where the text may be using hyperbole or understatement?', 'Q11': "Are there words or phrases in the text that are intended to manipulate the reader's feelings?"}
+   
+12 questions translated into Russian: 
+   {'Q0': 'Использует ли автор насыщенный язык или эмоционально окрашенные слова?', 'Q1': 'Можете ли вы указать случаи использования эмоционально окрашенных слов для поддержки утверждения?', 'Q2': 'Есть ли в тексте эмоционально окрашенные слова или выражения?', 'Q3': 'Использует ли текст язык, предназначенный для влияния на точку зрения читателя?', 'Q4': 'Есть ли в тексте места, где язык используется для воздействия на мнение или решение читателя?', 'Q5': 'Использует ли текст позитивные или негативные коннотации для влияния на мнение читателя?', 'Q6': 'Содержит ли текст слова или фразы, вызывающие сильные эмоции?', 'Q7': 'Можете ли вы найти случаи, когда используемый язык не нейтрален или объективен?', 'Q8': 'Есть ли использование выразительного языка или образности, которые могут повлиять на чувства читателя?', 'Q9': 'Использует ли текст язык, предназначенный для вызывания определенной реакции читателя?', 'Q10': 'Можете ли вы указать случаи, когда в тексте возможно использование гиперболы или преуменьшения?', 'Q11': 'Есть ли в тексте слова или выражения, предназначенные для манипулирования чувствами читателя?'}
+
 
 We used the 12 questions to predict class propaganda (if one or more HLQs answer affirmatively), else class None. Over the SemEval 2023 data we obtained F1 = 0.738. Very important observation is that questions should be employed when confidence >= 85. See paper for more details (this is competitive against a number of classifiers such as LogisticRegression and SVC that do not employ the confidence metric):
 ![Screenshot 2024-04-18 163748](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/ac88c4f6-9362-4f88-9ff2-74add929fd5c)
+
+
 
 
 ## Wikipedia Dataset
