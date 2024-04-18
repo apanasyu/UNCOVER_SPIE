@@ -49,10 +49,17 @@ Next we applied the questions over the SemEval 2023 Task 3 English. The followin
 
    Given a piece of text your goal is to answer each of the following questions as ‘True’, ‘False’, or ‘N/A’ (if question is not applicable) plus a confidence measure from 0-100. Questions: {list of questions}. Example output: Q1: True (conf:70); Q2: False (conf:30); Q3: N/A; ...
 
+
 ![Picture3](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/2395e5cb-8d66-4ffd-861f-2169dc8d53cc)
+
 
 In this way, the 324 questions are answered across 11,780 texts. Each answer is mapped to 1 for True, 0 for N/A, and -1 for False. A separate matrix capturing confidence metric is created (if no confidence supplied by GPT-4, assign a 0). For the gold label `None' one-hot encoding is applied (Class 0 contains propaganda; Class 1  corresponds to label `None'). These are captured in CSV files: FeatureMatrix324.csv and FeatureMatrix324conf.csv
 
+Next we perform feature selection using:
+1. ANOVA F-test: For numerical input and categorical output, the ANOVA F-test can be applied, and it is provided in scikit-learn via the `f_classif` function.
+2. Feature Importance from Tree-based models: Decision Trees and ensemble algorithms such as Random Forest or Gradient Boosting can provide feature importances based on how helpful each feature is at reducing uncertainty (entropy or Gini impurity).
+  
+![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/1a6d8dd8-d69c-45b7-94aa-8c17b9b04c79)
 
 ![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/9ff7ec85-56dc-4e2e-93d2-f6554f51da68)
 
