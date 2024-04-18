@@ -34,19 +34,21 @@ Particular attention given to government-controlled news websites that could pot
 The question-answering based approach to persuasion techniques proceeds in several steps. First, for each technique, we create a group of related questions that break down the task into simpler parts. The key insight is that we can use the LLM itself to generate these questions, thereby providing a platform for the LLM's understanding of each technique to be demonstrated. Then, we filter down the large set of questions to a more efficient subset by setting a threshold for high quality questions with reference to the SemEval dataset. 
 
 We expand the coverage of the questions by augmenting the 23 persuasion techniques from SemEval with 10 communication and 12 presentation of arguments techniques
-Communication practices: (1) Respectful Language, avoiding hate speech and derogatory terms; (2) Constructive Dialogue, focusing on ideas rather than personal attacks; (3) Empathetic Tone, appreciating others' feelings; (4) Open-mindedness, considering differing viewpoints; (5) Objectivity, maintaining factual accuracy without bias; (6) Active Listening, giving full attention to the speaker; (7) Nonviolent Communication, avoiding harmful speech; (8) Clear and Concise dialogue, minimizing misunderstandings; (9) Solution-Oriented discussions, seeking constructive resolution; and (10) Honesty, being straightforward yet respectful. The effective presentation of arguments: (1) a well-defined Thesis, (2) robust Evidence such as statistics and expert opinions, (3) Logical Reasoning with coherent thought progression, (4) Relevance of all points to the overarching thesis, and (5) addressing Counterarguments. The use of (6) ![Picture1](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/05d316f8-b7b3-4dda-bb03-15077a0a7707)
-Persuasive Language to evoke emotional responses, (7) Rhetorical Devices like metaphors, (8) Clarity in grammar and expression, (9) Factual Accuracy, and (10) Source Credibility is also crucial. Lastly, (11) Respect for Opposing Viewpoints and (12) Context awareness, which incorporates understanding of broader societal, cultural, historical, or political factors.
+Communication practices: (1) Respectful Language, avoiding hate speech and derogatory terms; (2) Constructive Dialogue, focusing on ideas rather than personal attacks; (3) Empathetic Tone, appreciating others' feelings; (4) Open-mindedness, considering differing viewpoints; (5) Objectivity, maintaining factual accuracy without bias; (6) Active Listening, giving full attention to the speaker; (7) Nonviolent Communication, avoiding harmful speech; (8) Clear and Concise dialogue, minimizing misunderstandings; (9) Solution-Oriented discussions, seeking constructive resolution; and (10) Honesty, being straightforward yet respectful. The effective presentation of arguments: (1) a well-defined Thesis, (2) robust Evidence such as statistics and expert opinions, (3) Logical Reasoning with coherent thought progression, (4) Relevance of all points to the overarching thesis, and (5) addressing Counterarguments. The use of (6) Persuasive Language to evoke emotional responses, (7) Rhetorical Devices like metaphors, (8) Clarity in grammar and expression, (9) Factual Accuracy, and (10) Source Credibility is also crucial. Lastly, (11) Respect for Opposing Viewpoints and (12) Context awareness, which incorporates understanding of broader societal, cultural, historical, or political factors.
 
 Here is the GPT-4 prompt structure:
+![Picture1](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/05d316f8-b7b3-4dda-bb03-15077a0a7707)
 
+Here is the GPT-4 example response:
+![Picture2](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/59de9146-a1ce-498f-8024-1a294f407869)
 
-The file GeneratedQuestions.csv shows the 324 resulting questions.
+Processing the 46 tasks (23 persuasion + 22 communication + 1 for None) results in 324 Questions. The file GeneratedQuestions.csv shows the 324 resulting questions.
 ![Screenshot from 2024-04-18 09-49-32](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/0d7e921a-a5b9-48d6-8990-cd785fb9b20a)
 
 Next we applied the questions over the SemEval 2023 Task 3 English.
 ![Screenshot from 2024-04-18 09-43-45](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/db6c0e68-65a1-485f-9d60-bae5d0074267)
 
-This was used to assess how each HLQ performs at predicting 0 class (propaganda) or 1 class (none). Weighed and Macro values provided. We used this to determine whether the answer to question of True or False is indicative of propaganda for example when Q20 is True it is indicative of propaganda conversely for Q258 should use the False.
+This was used to assess how each HLQ performs at predicting class 0 (propaganda) or class 1 (none). Weighed and Macro values provided. We used this to determine whether the answer to question of True or False is indicative of propaganda for example when Q20 is True it is indicative of propaganda conversely for Q258 should use the False.
 
 ## Synthetic Propaganda
 
