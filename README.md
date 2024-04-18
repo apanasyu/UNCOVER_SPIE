@@ -79,17 +79,59 @@ These are the 12 questions from employed in English:
 We used the 12 questions to predict class propaganda (if one or more HLQs answer affirmatively), else class None. Over the SemEval 2023 data we obtained F1 = 0.738. Very important observation is that questions should be employed when confidence >= 85. See paper for more details (this is competitive against a number of classifiers such as LogisticRegression and SVC that do not employ the confidence metric):
 ![Screenshot 2024-04-18 163748](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/ac88c4f6-9362-4f88-9ff2-74add929fd5c)
 
-
-
-
 ## Wikipedia Dataset
+
+Download and extract the contents from Google Drive:
 
 The 22,046 articles are translated. Each Wikipedia article by default contains sections. Within each section, the content is divided into chunks; where each chunk is not to exceed 3000 characters.
 ![Picture5](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/b153b258-74a9-4614-bda5-985b5f7867ac)
 
-We also translate the 12 questions into Russian.
+We used the 12 questions in English to process EN and RU2EN. We used the 12 Questions in Russian to process RU and EN2RU. Focussing on each of the 12 questions that answered true we were interested in obtaining the specific text responsible for the True answer. 
+
+For articles in English will employ the following system prompt:
+   taskEN = f"Given a piece of text your are tasked with a question: {InputQuestion} Identify specific language instances separated by semicolons."
+For articles in Russian and employ the following system prompt:
+   taskRU= f"Вам дан текст, и вас просят ответить на вопрос: {InputQuestion} Укажите конкретные примеры такой лексики, разделенные точкой с запятой."
 
 
+Use the ReadProcessedWikipedia.py to get the relevant text that corresponds to each Wikipedia passage. You need to update:
+    
+       folderOut = "path to Wikipedia folder"
+
+Where the folder contains the contents from Google Drive.
+
+The routine will create a folder called UNCOVER. The routine will output top IDs with most emotion. Each ID can then be used to generate all the original text plus relevant GPT-4 responses that have been aggregated (with redundancies removed as described in paper). For example for ID Q49100:
+
+    for WikiID in ["Q49100"]:
+        for count in [0, 1, 2, 3]:
+            print(f"Working with {WikiID}")
+
+            columnOfInterest = 'Text'
+            outputPath = folderOut + WikiID + "_" + countToFolderName[count] + "_FileText.txt"
+            #set outputPath to None to simply print to screen
+            getIDsToText(originalTextOptions[count], WikiID, columnOfInterest, outputPath)
+
+            columnOfInterest = 'Response'
+            outputPath = folderOut + WikiID + "_" + countToFolderName[count] + "_GPTResponse.txt"
+            #set outputPath to None to simply print to screen
+            getIDsToText(textToQAResponseAggregated[count], WikiID, columnOfInterest, outputPath)
+
+This routine will drop these files in folder UNCOVER:
+![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/1c0d6256-7877-4877-8bc0-d1e65694f00b)
+
+Q49100_2_EN_FileText vs. Q49100_1_RU2EN_FileText:
+![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/b97406ac-1baf-4ed9-baaf-de43a027f9a4)
+VS Russian to English:
+![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/1eb98503-ee31-4318-be17-d54e599d9905)
+
+Similarly to look at Russian version of Q49100 vs. English that has been translated, we would look at Q49100_3_RU_FileText vs. Q49100_4_EN2RU_FileText.
+
+The files that ends with GPTResponse.txt show aggregated extraction of emotional responses. For example, for Q49100_2_EN_FileText:
+![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/97689084-e97e-4159-9a64-c6dad9e350ad)
+Q49100_2_EN_GPTResponse contains possible biased emotional text:
+![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/f0102d70-1b5b-40f9-a25e-4b39fc7de130)
+
+The overlap has been highlighed for the first quoted piece of text. The chunk Q49100_4 is used (there was no emotional text identified for chunks Q49100_1, Q49100_2, Q49100_3). We see that the next chunk with any emotion is Q49100_13.
 
 ## Synthetic Propaganda Dataset
 
