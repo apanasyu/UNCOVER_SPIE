@@ -45,7 +45,14 @@ Here is the GPT-4 example response:
 Processing the 46 tasks (23 persuasion + 22 communication + 1 for None) results in 324 Questions. The file GeneratedQuestions.csv shows the 324 resulting questions.
 ![Screenshot from 2024-04-18 09-49-32](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/0d7e921a-a5b9-48d6-8990-cd785fb9b20a)
 
-Next we applied the questions over the SemEval 2023 Task 3 English.
+Next we applied the questions over the SemEval 2023 Task 3 English. The following GPT-4 prompt was utilized:
+
+     Given a piece of text your goal is to answer each of the following questions as ‘True’, ‘False’, or ‘N/A’ (if question is not applicable) plus a confidence measure from 0-100. Questions: {list of questions}. Example output: Q1: True (conf:70); Q2: False (conf:30); Q3: N/A; ...![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/9ff7ec85-56dc-4e2e-93d2-f6554f51da68)
+
+
+
+
+
 ![Screenshot from 2024-04-18 09-43-45](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/db6c0e68-65a1-485f-9d60-bae5d0074267)
 
 This was used to assess how each HLQ performs at predicting class 0 (propaganda) or class 1 (none). Weighed and Macro values provided. We used this to determine whether the answer to question of True or False is indicative of propaganda for example when Q20 is True it is indicative of propaganda conversely for Q258 should use the False.
