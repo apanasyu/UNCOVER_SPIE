@@ -81,7 +81,7 @@ We used the 12 questions to predict class propaganda (if one or more HLQs answer
 
 ## Wikipedia Dataset
 
-Download and extract the contents from Google Drive:
+Download and extract the contents from Google Drive for files All22KFiles...: https://drive.google.com/drive/u/0/folders/15DjcJ_u_GhOI2m9NzOU0kjopm3PGiptv
 
 The 22,046 articles are translated. Each Wikipedia article by default contains sections. Within each section, the content is divided into chunks; where each chunk is not to exceed 3000 characters.
 ![Picture5](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/b153b258-74a9-4614-bda5-985b5f7867ac)
@@ -134,6 +134,9 @@ Q49100_2_EN_GPTResponse contains possible biased emotional text:
 The overlap has been highlighed for the first quoted piece of text. The chunk Q49100_4 is used (there was no emotional text identified for chunks Q49100_1, Q49100_2, Q49100_3). We see that the next chunk with any emotion is Q49100_13.
 
 ## Synthetic Propaganda Dataset
+
+
+Download and extract the contents from Google Drive for files All22KFiles...: https://drive.google.com/drive/u/0/folders/15DjcJ_u_GhOI2m9NzOU0kjopm3PGiptv
 
 The high level categories are:\footnote{categories are based on GPT-4 query with `items a nation-state might wish to promote to gain advantage over other nation-states'} Government, Judiciary, Military, Law Enforcement Agencies, Administrative Bodies, Healthcare System, Education System, Infrastructure, Financial Institutions, Natural Resources, Transportation System, Communication Networks, Energy Resources, Social Services, Public Policy, Environmental Management, Cultural Institutions, National Identity, Economic System, Diplomatic Relations, Technological Advancements, Educational Excellence, Trade Policies, Human Rights Record, Immigration Policies, Tourism Industry, Scientific Research Capabilities, Environmental Stewardship, International Presence, and Social Welfare.
 
