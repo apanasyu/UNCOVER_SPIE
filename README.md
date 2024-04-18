@@ -51,7 +51,7 @@ Next we applied the questions over the SemEval 2023 Task 3 English. The followin
 
 ![Picture3](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/2395e5cb-8d66-4ffd-861f-2169dc8d53cc)
 
-In this way, the 324 questions are answered across 11,780 texts. Each answer is mapped to 1 for True, 0 for N/A, and -1 for False. A separate matrix capturing confidence metric is created (if no confidence supplied by GPT-4, assign a 0). For the gold label `None' one-hot encoding is applied (Class 0 contains propaganda; Class 1  corresponds to label `None'). These are captured in CSV files: Matrix324.csv and Matrix324conf.csv
+In this way, the 324 questions are answered across 11,780 texts. Each answer is mapped to 1 for True, 0 for N/A, and -1 for False. A separate matrix capturing confidence metric is created (if no confidence supplied by GPT-4, assign a 0). For the gold label `None' one-hot encoding is applied (Class 0 contains propaganda; Class 1  corresponds to label `None'). These are captured in CSV files: FeatureMatrix324.csv and FeatureMatrix324conf.csv
 
 
 ![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/9ff7ec85-56dc-4e2e-93d2-f6554f51da68)
