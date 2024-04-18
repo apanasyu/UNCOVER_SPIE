@@ -58,15 +58,8 @@ In this way, the 324 questions are answered across 11,780 texts. Each answer is 
 Next we perform feature selection using:
 1. ANOVA F-test: For numerical input and categorical output, the ANOVA F-test can be applied, and it is provided in scikit-learn via the `f_classif` function.
 2. Feature Importance from Tree-based models: Decision Trees and ensemble algorithms such as Random Forest or Gradient Boosting can provide feature importances based on how helpful each feature is at reducing uncertainty (entropy or Gini impurity).
+
   
-![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/1a6d8dd8-d69c-45b7-94aa-8c17b9b04c79)
-
-![image](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/9ff7ec85-56dc-4e2e-93d2-f6554f51da68)
-
-
-
-
-
 ![Screenshot from 2024-04-18 09-43-45](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/db6c0e68-65a1-485f-9d60-bae5d0074267)
 
 This was used to assess how each HLQ performs at predicting class 0 (propaganda) or class 1 (none). Weighed and Macro values provided. We used this to determine whether the answer to question of True or False is indicative of propaganda for example when Q20 is True it is indicative of propaganda conversely for Q258 should use the False.
