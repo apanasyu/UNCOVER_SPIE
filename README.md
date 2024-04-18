@@ -10,7 +10,7 @@ Adding to the current body of knowledge, our research leverages the latest LLMs 
 * We explore an existing propaganda detection dataset, and as a baseline develop a zero-shot prompt using GPT-4. From the initial exploration, we take a closer look at the baseline's error cases, then automatically generate a range of specific questions that can function as features for an improved classifier. By performing a statistical analysis, we identify the most significant questions, measured against the existing gold annotations.
 * Given the most significant questions, we apply them on the four dataset versions, enabling us to gauge the total amount of emotionally charged content. We then rank and visualize the articles.* Finally, we propose a bilingual synthetic propaganda dataset that prioritizes nation-state propaganda, incorporating examples across numerous politically relevant categories. This dataset addresses the imbalance present in existing resources, providing around 10K examples for each technique.
 
-## Wikipedia and Wikidata 
+## Wikipedia and Wikidata Filters
 WikiData is offered as a comprehensive single download, while Wikipedia provides separate downloads for each language. Additionally, an SQL data file is available to establish the connections between Wikipedia's and WikiData's identification numbers. On December 1, 2022, a total of five distinct files were downloaded: (1) the WikiData file, ending in `latest-all.json.bz2' (~$80GB in size: https://dumps.wikimedia.org/wikidatawiki/entities/), (2) the Wikipedia and SQL mapping end in: `wiki-latest-pages-articles.xml.bz2' and `page\_props.sql.gz' (for English ~20GB: https://dumps.wikimedia.org/enwiki/latest/, for Russian ~5GB: https://dumps.wikimedia.org/ruwiki/latest/).
 
 WikiData supplies data about specific Wikipedia language links. We employ these links to center our attention on Wikipedia entities that exist in both English and Russian languages. We target all records featuring `sitelinks.ruwiki' and `sitelinks.enwiki'. A Python script assists us in filtering and loading eachline from the `.bz2' file. 
@@ -59,12 +59,23 @@ Next we perform feature selection using:
 1. ANOVA F-test: For numerical input and categorical output, the ANOVA F-test can be applied, and it is provided in scikit-learn via the `f_classif` function.
 2. Feature Importance from Tree-based models: Decision Trees and ensemble algorithms such as Random Forest or Gradient Boosting can provide feature importances based on how helpful each feature is at reducing uncertainty (entropy or Gini impurity).
 
-  
+The ANOVA and RandomForest Question importances are stored in: anova_feature_importance.csv and random_forest_feature_importances.csv. For example, using ANOVA the top questions for Appeal to Authority are:
+![Picture4](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/280c4297-6d7d-480c-822c-1059b778fe7d)
+
+Of particular interest was analyzing how each question performs in predicting class 0 (propaganda) or class 1 (none). Weighed and Macro values provided. We used this to determine whether the answer to question of True or False is indicative of propaganda for example when Q20 is True it is indicative of propaganda conversely for Q258 should use the False (see IndividualHLQPerformance_Confidence85_NoneLabel1.csv).
 ![Screenshot from 2024-04-18 09-43-45](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/db6c0e68-65a1-485f-9d60-bae5d0074267)
 
-This was used to assess how each HLQ performs at predicting class 0 (propaganda) or class 1 (none). Weighed and Macro values provided. We used this to determine whether the answer to question of True or False is indicative of propaganda for example when Q20 is True it is indicative of propaganda conversely for Q258 should use the False.
+Based on ANOVA and RandomForest ranking we utilize 12 questions: Q20 pertains to objectivity, Q88 and Q92 address persuasive language to evoke emotional responses, Q210 through Q217 explore aspects of loaded language, Q258 associated with none, and Q295 examines the use of exaggeration or minimization. In this way, 9 out of the 12 questions are related to loaded or emotional language. This was expected given that `loaded language' is by far the most frequent category in SemEval. 
 
-## Synthetic Propaganda
+We used the 12 questions to predict class propaganda (if one or more HLQs answer affirmatively), else class None. Over the SemEval 2023 data we obtained F1 = 0.738. Very important observation is that questions should be employed when confidence >= 85. See paper for more details (this is competitive against a number of classifiers such as LogisticRegression and SVC that do not employ the confidence metric):
+![Screenshot 2024-04-18 163748](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/ac88c4f6-9362-4f88-9ff2-74add929fd5c)
+
+
+## Wikipedia Dataset
+
+The 
+
+## Synthetic Propaganda Dataset
 
 The high level categories are:\footnote{categories are based on GPT-4 query with `items a nation-state might wish to promote to gain advantage over other nation-states'} Government, Judiciary, Military, Law Enforcement Agencies, Administrative Bodies, Healthcare System, Education System, Infrastructure, Financial Institutions, Natural Resources, Transportation System, Communication Networks, Energy Resources, Social Services, Public Policy, Environmental Management, Cultural Institutions, National Identity, Economic System, Diplomatic Relations, Technological Advancements, Educational Excellence, Trade Policies, Human Rights Record, Immigration Policies, Tourism Industry, Scientific Research Capabilities, Environmental Stewardship, International Presence, and Social Welfare.
 
