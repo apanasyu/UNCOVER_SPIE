@@ -64,7 +64,7 @@ The ANOVA and RandomForest Question importances are stored in: anova_feature_imp
 
 Based on ANOVA and RandomForest ranking we utilize 12 questions: Q20 pertains to objectivity, Q88 and Q92 address persuasive language to evoke emotional responses, Q210 through Q217 explore aspects of loaded language, Q258 associated with none, and Q295 examines the use of exaggeration or minimization. In this way, 9 out of the 12 questions are related to loaded or emotional language. This was expected given that `loaded language' is by far the most frequent category in SemEval. 
 
-Of particular interest was analyzing how each question performs in predicting class 0 (propaganda) or class 1 (none). Weighed and Macro values provided. We used this to determine whether the answer to question of True or False is indicative of propaganda for example when Q20 is True it is indicative of propaganda conversely for Q258 should use the False (see IndividualHLQPerformance_Confidence85_NoneLabel1.csv).
+Of particular interest was analyzing how each question performs in predicting class 0 (propaganda) or class 1 (none). Use this to determine whether the answer to question of True or False is indicative of propaganda for example when Q20 is True it is indicative of propaganda conversely for Q258 should use the False (see IndividualHLQPerformance_Confidence85_NoneLabel1.csv).
 ![Screenshot from 2024-04-18 09-43-45](https://github.com/apanasyu/UNCOVER_SPIE/assets/80060152/db6c0e68-65a1-485f-9d60-bae5d0074267)
 
 We negated the question if necessary such that the True answer implies that text has propaganda. Here are the revised questions:
